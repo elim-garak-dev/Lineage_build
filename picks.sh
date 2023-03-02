@@ -16,10 +16,14 @@ source build/envsetup.sh
 
 # -------------- PLATFORM STUFF --------------
 
-repopick 320142 320337 321934 318814-318817 320525 320534-320540 320542-320546 331660 331661 335203
-repopick -f 326385 && repopick -f -P system/bpf 320591 && repopick -f -P system/netd 320592 && repopick -f -P art 318097 && repopick -f 287706 -P external/perfetto
-cd frameworks/base/ && git fetch https://github.com/elim-garak-dev/android_frameworks_base lineage-19.1 && git cherry-pick baa916c1581814bd075ec39de2e008b054b5c2d2 && cd ../..
-cd frameworks/av/ && git fetch https://github.com/elim-garak-dev/android_frameworks_av lineage-19.1 && git cherry-pick 9115090175ac4226aa51040f58fdf81dedac1b0c && cd ../..
-cd hardware/samsung_slsi/exynos5420/ && git fetch "https://github.com/exynos5420/android_hardware_samsung_slsi_exynos5420" refs/changes/09/8409/1 && git cherry-pick FETCH_HEAD && cd ../../..
-
+repopick -g https://review.exynos5420.com 8454
+repopick -f 319486 325295 349386
+cd device/samsung/chagallwifi/ && git fetch "https://github.com/exynos5420/android_device_samsung_chagallwifi" refs/changes/11/8411/2 && git cherry-pick FETCH_HEAD && cd ../../..
+cd device/samsung/chagallwifi/ && git fetch "https://github.com/exynos5420/android_device_samsung_chagallwifi" refs/changes/05/8405/2 && git cherry-pick FETCH_HEAD && cd ../../..
+cd vendor/samsung/chagall-common/ && git fetch "https://github.com/exynos5420/android_vendor_samsung_chagall-common" refs/changes/12/8412/1 && git cherry-pick FETCH_HEAD FETCH_HEAD && cd ../../..
+cd kernel/samsung/exynos5420/
+git revert --no-edit 67d1bc964081bad13e5b54ec76499ecc4edb0fcc
+git fetch https://github.com/bluess57/android_kernel_samsung_exynos5420 lineage-17.1 && git cherry-pick 0a33bd51180bc0c62d9c41b64c66aae49f7556be
+git fetch https://github.com/bluess57/android_kernel_samsung_exynos5420 lineage-17.1 && git cherry-pick 8081804700073dd0cbb71c54d8478e9bad43c5f1
+cd ../../..
 exit 0
