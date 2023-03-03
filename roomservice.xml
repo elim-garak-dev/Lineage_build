@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <!-- DEVICES -->
-  <remote name="gitlab" fetch="https://gitlab.com" />
   <project name="exynos5420/android_device_samsung_chagallwifi" path="device/samsung/chagallwifi" remote="github" />
   <project name="exynos5420/android_device_samsung_chagall-common" path="device/samsung/chagall-common" remote="github" />
-  <project name="elim-garak-dev/android_device_samsung_universal5420-common" path="device/samsung/universal5420-common" remote="github" />
+  <project name="exynos5420/android_device_samsung_universal5420-common" path="device/samsung/universal5420-common" remote="github" />
   <project name="LineageOS/android_device_samsung_slsi_sepolicy" path="device/samsung_slsi/sepolicy" remote="github" />
 
   <!-- KERNEL -->
