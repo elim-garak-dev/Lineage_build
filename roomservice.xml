@@ -2,14 +2,14 @@
 <manifest>
 <!-- DEVICES -->
   <project name="elim-garak-dev/android_device_samsung_universal5420-common" path="device/samsung/universal5420-common" remote="github" revision="lineage-19.1" />
-  <project name="LineageOS/android_device_samsung_slsi_sepolicy" path="device/samsung_slsi/sepolicy" remote="github" revision="lineage-19.1" />
   <project name="elim-garak-dev/android_device_samsung_chagall-common" path="device/samsung/chagall-common" remote="github" revision="lineage-19.1" />
   <project name="elim-garak-dev/android_device_samsung_chagallwifi" path="device/samsung/chagallwifi" remote="github" revision="lineage-19.1" />
+  <project name="LineageOS/android_device_samsung_slsi_sepolicy" path="device/samsung_slsi/sepolicy" remote="github" revision="lineage-19.1" />
 
 <!-- VENDOR -->
    <project name="exynos5420/android_vendor_samsung_universal5420-common" path="vendor/samsung/universal5420-common" remote="github" revision="lineage-18.1" />
    <project name="exynos5420/android_vendor_samsung_chagall-common" path="vendor/samsung/chagall-common" remote="github" revision="lineage-18.1" />
-   <project name="elim-garak-dev/android_vendor_samsung_chagallwifi" path="vendor/samsung/chagallwifi" remote="github" revision="lineage-19.1" />
+   <project name="exynos5420/android_vendor_samsung_chagallwifi" path="vendor/samsung/chagallwifi" remote="github" revision="lineage-18.1" />
 
 <!-- KERNEL -->
   <project name="elim-garak-dev/android_kernel_samsung_exynos5420" path="kernel/samsung/exynos5420" remote="github" revision="lineage-19.1" />
